@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Functions</h1>
+    <pre>
+Q1:Create one function with zero parameter having a console statement
+
+Answer: function say(){
+    console.log('Hello');
+}
+        say()
+    </pre>
+    <pre>
+Q2:Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7
+
+Answer:function sum(x,y){
+    console.log(`${x}+${y}=${x+y}`);
+}
+    sum(3,4)
+    </pre>
+    <pre>
+Q3:Create one arrow function
+
+Answer:const Gm=()=>{
+    console.log('Good Morning');
+}
+    </pre>
+    <pre>
+Q4:Print output: 
+var x = 21;
+var girl = function () {
+    console.log(x);
+    var x = 20;
+};
+girl ();
+
+Answer:undefined
+    </pre>
+    <pre>
+Q5:Print output: 
+var x = 21;
+girl ();
+console.log(x)
+function girl() {
+    console.log(x);
+    var x = 20;
+};
+
+Answer:undefined, 21
+    </pre>
+    <pre>
+Q6:Print output
+
+var x = 21;
+a();
+b();
+
+  function a() {
+
+   x = 20;
+  console.log(x);
+};
+ function b() {
+
+    x = 40;
+   console.log(x);
+};
+
+Answer:20 40
+    </pre>
+    <pre>
+Q7:Write a function that accepts parameter n and returns factorial of n
+
+Answer:const factorial=(n)=>{
+    var fact = n;
+    if (n === 0 || n === 1) 
+      return 1; 
+    while (n > 1) { 
+      n--;
+      fact *= n;
+    }
+    console.log(fact);;
+}
+    factorial(5)
+    </pre>
+    <script src="./main.js"></script>
+</body>
+</html>
